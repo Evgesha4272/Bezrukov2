@@ -1,5 +1,5 @@
 {
-    "name": "evgesha4272/library_evgesha",
+    "name": "evgesha4272/bezrukov2",
     "description": "Evgesha",
     "type": "library",
 	"license": "-",
@@ -14,7 +14,7 @@
 	
 	"autoload":{
 		"psr-4":{
-			"Ivanov\\": "Bezrukov"
+			"bezrukov\\": "bezrukov"
 		}
 	},
 	
