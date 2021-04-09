@@ -15,6 +15,10 @@ class MyLog extends LogAbstract implements LogInterface
 	public function _write()
     {
 		$da = date('d-m-Y\_H.i.s.u');
+
+        if (!is_dir('./log/')) {
+            mkdir("./log/");
+        }
         foreach ($this->log as $v){
             echo $v . "\r\n";
 			file_put_contents($_SERVER['DOCUMENT_ROOT'] . "log\\$da.log", trim($v."\r\n") . PHP_EOL, FILE_APPEND);
