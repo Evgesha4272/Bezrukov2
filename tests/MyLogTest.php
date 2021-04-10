@@ -7,8 +7,8 @@ class MyLogTest extends TestCase
 {
 
      public function testLog(){
-        $this->expectOutputString("equation!");
-         MyLog::log("equation!");
+        $this->expectOutputString("This is line equation!");
+        MyLog::log("This is line equation!");
         MyLog::write();
      }
      public function testInstance() {
