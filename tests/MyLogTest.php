@@ -11,7 +11,7 @@ class MyLogTest extends TestCase
 
         $this->assertEquals('', MyLog::write("Testing"));
         $this->assertEquals('', MyLog::write(1234));
-        $this->assertEquals('', MyLog::write("Поставьте 3 пожалуйста"));
+        $this->assertEquals('', MyLog::write());
 
     }
 
@@ -25,7 +25,7 @@ class MyLogTest extends TestCase
     public function testMyLogEx()
     {
         $this->expectException(TypeError::class);
-        $this->assertEquals('', MyLog::log("Поставьте 3 пожалуйста"));
+        $this->assertEquals('', MyLog::log());
         $this->assertEquals('', MyLog::log(null));
     }
 
